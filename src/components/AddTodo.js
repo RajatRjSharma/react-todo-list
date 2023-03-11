@@ -16,7 +16,7 @@ export default function AddTodo(props) {
   };
 
   return (
-    <form className="container" onSubmit={submit}>
+    <form className="container w-50" onSubmit={submit}>
       <h3 className="text-center my-3">Add Todos</h3>
       <div className="mb-3">
         <label htmlFor="title" className="form-label">

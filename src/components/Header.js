@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Header(props) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           {props.title}
