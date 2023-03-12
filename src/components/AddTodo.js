@@ -20,7 +20,7 @@ export default function AddTodo(props) {
       <h3 className="text-center my-3">Add Todos</h3>
       <div className="mb-3">
         <label htmlFor="title" className="form-label">
-          Todo title
+          Todo Title
         </label>
         <input
           type="text"

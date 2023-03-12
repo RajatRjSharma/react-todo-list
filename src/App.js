@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import AddTodo from "./components/AddTodo";
 import About from "./components/About";
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   const [todos, updateTodos] = useState(() => {
@@ -34,10 +34,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header title="My Todos List" searchBar={false} />
         <Routes>
           <Route
+            exact
             path="/"
             element={
               <>
@@ -46,11 +47,15 @@ function App() {
               </>
             }
           />
-          <Route path="/about" element={<About title="My Todos List" />} />
+          <Route
+            exact
+            path="/about"
+            element={<About title="My Todos List" />}
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
