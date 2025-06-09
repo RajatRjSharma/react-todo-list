@@ -1,7 +1,7 @@
 {
   "name": "todos-list",
   "_homepage": "https://RajatRjSharma.github.io/react-todo-list",
-  "homepage": "https://react-todo-list.rajatkumarsharma.com/",
+  "homepage": "https://react-todo-list.rajatkumarsharma.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
